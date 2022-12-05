@@ -146,13 +146,16 @@
 
 
 
-
-            <div class="kanan mt-20 md:mt-10 xl:mt-0     large:flex large:justify-end md:w-5/6">
-                <div class="hero large:w-[90%] md:w-full">
+            <div class="  kanan mt-10 md:mt-10 xl:mt-0  large:flex large:justify-end md:w-5/6 ">
+                <div class="hero large:w-[90%] md:w-full relative h-full ">
+                    <!-- tangan robot -->
                     <img loading="lazy" src="assets/robot.png" alt="robot hand" class="md:scale-125 lg:scale-100">
-                    <div class="segitiga absolute  -bottom-48 hidden xl:block"></div>
-
                 </div>
+                <div
+                    class="w-[140px] h-[140px] flex justify-center items-center mt-12 m-auto md:hidden lg:flex lg:absolute lg:top-52 xl:top-56 lg:right-[450px] xl:right-[600px]">
+                    <img src="assets/circle.svg" alt="get started">
+                </div>
+                <div class="segitiga absolute  -bottom-48 hidden xl:block"></div>
             </div>
         </div>
     </section>
@@ -165,7 +168,7 @@
     <!-- secondSection-=============================== -->
     <section class="mt-20 -mb-4 py-14 " data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div
-            class="container flex flex-col large:flex-row items-start md:items-center space-y-7 large:space-y-0 space-x-0 md:space-x-5 lg:space-x-7  justify-start large:justify-evenly">
+            class="container flex flex-col large:flex-row items-start md:items-center space-y-7 large:space-y-0 space-x-0 md:space-x-5 lg:space-x-20  justify-start large:justify-evenly">
             <div class="kiri flex justify-center items-center space-x-5 lg:space-x-3 ">
                 <h1 class="text-[25px] lg:text-[40px]">3800+</h1>
                 <p class="teksBiru text-[16px] generation">User Active</p>
@@ -337,20 +340,21 @@
 
 
     <!-- sixthSection -->
-    <section class=" mt-14  px-5 py-14 overflow-x-hidden " data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <section class=" mt-14  px-5 py-14 " data-aos="fade-up" data-aos-anchor-placement="center-bottom">
 
-        <div class="container flex flex-col md:flex-row justify-around items-center md:w-[80%] mx-auto relative">
+        <div class="container flex flex-col md:flex-row justify-around items-center md:w-[80%] mx-auto ">
             <div class="kanan">
                 <h1 class="title-heading text-center md:text-left">What people
                     are saying about us</h1>
             </div>
-            <div class="kiri mt-5 lg:mt-0">
-                <p class="text-white/70 mini:text-[14px] sedang:text-[16px] w-ful md:w-[75%] text-center md:text-left">
+            <div class="kiri mt-5 lg:mt-0 ">
+                <p class="text-white/70 mini:text-[14px] sedang:text-[16px] w-ful md:w-[75%] text-center md:text-left ">
                     Everything you need to
                     accept card payments and grow your
                     business
                     anywhere on
                     the planet.</p>
+                <div class="bulat absolute -right-28 hidden xl:block"></div>
             </div>
         </div>
         <div class="mt-20 w-1/3 h-1 mx-auto bg-sky-500"></div>
@@ -424,15 +428,15 @@
     <!-- eight section -->
     <section class=" mt-24" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div
-            class="container w-[80%] mx-auto flex justify-center  space-x-10  gap-10 lg:gap-0 lg:justify-evenly items-center flex-wrap lg:flex-nowrap">
+            class="container w-[80%] mx-auto flex justify-center  md:space-x-10  gap-10 lg:gap-0 lg:justify-evenly items-center flex-wrap lg:flex-nowrap">
             <img loading="lazy" src="assets/airbnb.png" alt="airbnb" class="w-[192px]">
             <img loading="lazy" src="assets/binance.png" alt="binance" class="w-[192px]">
             <img loading="lazy" src="assets/coinbase.png" alt="coinbase" class="w-[192px]">
             <img loading="lazy" src="assets/dropbox.png" alt="dropbox" class="w-[192px]">
         </div>
+        <div class="bulat absolute -left-28 hidden xl:block"></div>
     </section>
     <!-- end eight section -->
-
 
     <!-- ninth section -->
     <section class=" mt-24 py-14" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
@@ -478,35 +482,44 @@
             <div class="mt-10 md:mt-0">
                 <h1 class="text-[18px]">Usefull Links</h1>
                 <ul class="mt-5">
-                    <li class="my-2"><a class="text-white/70 mini:text-[14px] sedang:text-[16px] hover:text-white/100"
-                            href="#">Content</a></li>
-                    <li class="my-2"><a class="text-white/70 mini:text-[14px] sedang:text-[16px] hover:text-white/100"
-                            href="#">How it Works</a></li>
-                    <li class="my-2"><a class="text-white/70 mini:text-[14px] sedang:text-[16px] hover:text-white/100"
-                            href="#">Create</a></li>
-                    <li class="my-2"><a class="text-white/70 mini:text-[14px] sedang:text-[16px] hover:text-white/100"
-                            href="#">Explore</a></li>
-                    <li class="my-2"><a class="text-white/70 mini:text-[14px] sedang:text-[16px] hover:text-white/100"
-                            href="#">Terms & Services</a></li>
+                    <li class="my-2"><a href="#" id="style-2" data-replace="Contet"><span
+                                class="footer-link">Content</span></a></li>
+                    <li class="my-2"><a href="#" id="style-2" data-replace="How it Works"><span class="footer-link">How
+                                it Works</span></a></li>
+                    <li class="my-2"><a href="#" id="style-2" data-replace="Create"><span
+                                class="footer-link">Create</span></a></li>
+                    <li class="my-2"><a href="#" id="style-2" data-replace="Explore"><span
+                                class="footer-link">Explore</span></a></li>
+                    <li class="my-2"><a href="#" id="style-2" data-replace="Terms & Services"><span
+                                class="footer-link">Terms & Services</span></a></li>
+
+
                 </ul>
             </div>
             <!--  -->
             <div class="mt-10 md:mt-0">
                 <h1 class="text-[18px]">Community</h1>
                 <ul class="mt-5">
-                    <li class="my-2"><a class="footer-link" href="#">Help Center</a></li>
-                    <li class="my-2"><a class="footer-link" href="#">Partners</a></li>
-                    <li class="my-2"><a class="footer-link" href="#">Suggestions</a></li>
-                    <li class="my-2"><a class="footer-link" href="#">Blog</a></li>
-                    <li class="my-2"><a class="footer-link" href="#">Newsletters</a></li>
+                    <li class="my-2"><a href="#" id="style-2" data-replace="Help Center"><span class="footer-link">Help
+                                Center</span></a></li>
+                    <li class="my-2"><a href="#" id="style-2" data-replace="Partners"><span
+                                class="footer-link">Partners</span></a></li>
+                    <li class="my-2"><a href="#" id="style-2" data-replace="Suggestions"><span
+                                class="footer-link">Suggestions</span></a></li>
+                    <li class="my-2"><a href="#" id="style-2" data-replace="Blog"><span
+                                class="footer-link">Blog</span></a></li>
+                    <li class="my-2"><a href="#" id="style-2" data-replace="Newsletters"><span
+                                class="footer-link">Newsletters</span></a></li>
                 </ul>
             </div>
             <!--  -->
             <div class="mt-10 md:mt-0">
                 <h1 class="text-[18px]">Partner</h1>
                 <ul class="mt-5">
-                    <li class="my-2"><a class="footer-link" href="#">Our Partner</a></li>
-                    <li class="my-2"><a class="footer-link" href="#">Become a Partner</a></li>
+                    <li class="my-2"><a href="#" id="style-2" data-replace="Our Partner"><span class="footer-link">Our
+                                Partner</span></a></li>
+                    <li class="my-2"><a href="#" id="style-2" data-replace="Become a Partner"><span
+                                class="footer-link">Become a Partner</span></a></li>
                 </ul>
             </div>
             <!--  -->

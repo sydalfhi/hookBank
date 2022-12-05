@@ -40,6 +40,29 @@
             }
         }
     </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+    .text-heading{
+        @apply text-[40px] mini:text-[45px] sedang:text-[40px] large:text-[60px] md:text-[50px] xl:text-[72px]
+    }
+    .text-paragraf{
+        @apply text-white/70  mini:text-[14px] sedang:text-[16px] large:w-[90%] md:text-[13px] lg:text-[1rem] xl:text-[18px]
+    }
+    .sub-paragraf{
+    @apply text-white/70 mini:text-[14px] sedang:text-[16px] text-[14px] md:text-[16px] font-light 
+    }
+    .title-heading{
+        @apply text-[27px] mb-3 md:text-[48px] large:text-4xl large:leading-[60px] lg:leading-normal
+    }
+    .footer-link{
+        @apply text-white/70 mini:text-[14px] sedang:text-[16px] hover:text-white/100
+    }
+  </style>
     <!-- setingan -->
 
 </head>
@@ -51,7 +74,7 @@
 
 
     <!-- header========================================== -->
-    <header class="w-full md:mb-[50px]">
+    <header class="w-full md:mb-[50px] ">
 
         <nav class="flex justify-between items-center px-5 large:px-12 py-5">
             <div class="logo w-1/2 large:w-[19vw] md:w-[14vw]">
@@ -60,10 +83,14 @@
             <div class="link ">
                 <img loading="lazy" src="assets/menu.svg" alt="menu" class="block md:hidden">
                 <ul class="space-x-16 hidden md:flex">
-                    <li><a href="#" class="text-white font-popin font-semibold">Home</a></li>
-                    <li><a href="#" class="text-white/80 font-popin font-semibold">About</a></li>
-                    <li><a href="#" class="text-white/80 font-popin font-semibold">Service</a></li>
-                    <li><a href="#" class="text-white/80 font-popin font-semibold">Contact</a></li>
+                    <li> <a href="#" id="style-2" data-replace="Home"><span
+                                class="text-white font-popin font-semibold">Home</span></a></li>
+                    <li> <a href="#" id="style-2" data-replace="About"><span
+                                class="text-white font-popin font-semibold">About</span></a></li>
+                    <li> <a href="#" id="style-2" data-replace="Service"><span
+                                class=" text-white font-popin font-semibold">Service</span></a></li>
+                    <li> <a href="#" id="style-2" data-replace="Contact"><span
+                                class="text-white font-popin font-semibold">Contact</span></a></li>
                 </ul>
             </div>
         </nav>
@@ -78,12 +105,12 @@
 
 
     <!-- firssection======================================= -->
-    <section class=" mt-5 large:mt-10 overflow-x-hidden">
+    <section class=" my-5 large:mt-10 overflow-x-hidden">
         <div class=" block md:flex md:justify-between">
 
 
             <div class="kiri w-full px-5 md:pl-10">
-                <div data-aos="zoom-in-up"
+                <div data-aos="fade-up"
                     class="diskon w-full large:w-4/6 large:justify-around large:m-auto md:ml-0 md:w-[60%] mt-10 flex justify-between px-3 md:px-5 space-x-3 md:space-x-2 items-center">
                     <div class="">
                         <img loading="lazy" src="assets/Discount.svg" alt="diskon">
@@ -100,14 +127,11 @@
 
 
                 <div class="mt-10 px-5 md:px-5">
-                    <h1
-                        class="text-[40px] mini:text-[45px] sedang:text-[40px] large:text-[60px] md:text-[55px] xl:text-[72px]">
-                        The Next <span class="generation">GENERATION</span>
-                        Payment Method.
-                    </h1>
+                    <h1 class="text-heading">The Next </h1>
+                    <h1 class="text-heading generation">GENERATION</h1>
+                    <h1 class="text-heading">Payment Method.</h1>
                     <!--  -->
-                    <p
-                        class="mt-10 text-white/70  mini:text-[14px] sedang:text-[16px] large:w-[90%] md:text-[13px] lg:text-[1rem] xl:text-[18px]">
+                    <p class="mt-10 text-paragraf">
                         Our
                         team of experts
                         uses a
@@ -139,20 +163,20 @@
 
 
     <!-- secondSection-=============================== -->
-    <section class="mt-28" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <section class="mt-20 -mb-4 py-14 " data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div
-            class="container flex flex-col large:flex-row items-center space-y-7 large:space-y-0  justify-start large:justify-evenly">
-            <div class="kiri flex justify-center items-center space-x-5">
+            class="container flex flex-col large:flex-row items-start md:items-center space-y-7 large:space-y-0 space-x-0 md:space-x-5 lg:space-x-7  justify-start large:justify-evenly">
+            <div class="kiri flex justify-center items-center space-x-5 lg:space-x-3 ">
                 <h1 class="text-[25px] lg:text-[40px]">3800+</h1>
                 <p class="teksBiru text-[16px] generation">User Active</p>
             </div>
             <!--  -->
-            <div class="tengah flex justify-center items-center space-x-5">
+            <div class="tengah flex justify-center items-center space-x-5 lg:space-x-3">
                 <h1 class="text-[25px] lg:text-[40px]">230+</h1>
                 <p class="teksBiru text-[16px] generation">TRUSTED BY COMPANY</p>
             </div>
             <!--  -->
-            <div class="kanan flex justify-center items-center space-x-5">
+            <div class="kanan flex justify-center items-center space-x-5 lg:space-x-3">
                 <h1 class="text-[25px] lg:text-[40px]">$250M+</h1>
                 <p class="teksBiru text-[16px] generation">TRANSACTION</p>
             </div>
@@ -166,13 +190,14 @@
 
     <!-- thirdsection =========================-->
 
-    <section class="mt-28 w-full px-5 xl:px-[120px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <section class=" mt-28 w-full py-12 px-5 xl:px-[120px]" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
 
         <div class="container flex flex-col md:flex-row justify-center items-center">
             <div class="kiri flex flex-col">
-                <h1 class=" text-2xl md:text-[48px] large:text-4xl large:leading-[60px] lg:leading-normal">You do the
+                <h1 class="title-heading">You do the
                     business, we’ll handle the money.</h1>
-                <p class="text-white/75 mt-7 lg:mt-6 text-[14px] md:text-[16px]">With the right credit card, you can
+                <p class="text-paragraf">With the right credit card, you can
                     improve your financial life by
                     building
                     credit, earning
@@ -202,8 +227,7 @@
                         <!-- *================================ -->
                         <div class="flex flex-col ">
                             <h1 class="text-[19px] md:text-[18px] ">100% Secured</h1>
-                            <p
-                                class=" md:text-white/70 mini:text-[14px] sedang:text-[16px] text-[16px] md:text-[16px] font-light  ">
+                            <p class=" sub-paragraf  ">
                                 We take proactive steps
                                 make sure your
                                 information and transactions are secure.</p>
@@ -220,8 +244,7 @@
                         <!-- *================================ -->
                         <div class="flex flex-col ">
                             <h1 class="text-[19px] md:text-[18px] ">Balance Transfer</h1>
-                            <p
-                                class="text-white/70 mini:text-[14px] sedang:text-[16px] text-[14px] md:text-[16px] font-light  ">
+                            <p class=" sub-paragraf">
                                 A balance transfer credit
                                 card can save
                                 you a lot of money in interest charges.</p>
@@ -238,8 +261,7 @@
                         <!-- *================================ -->
                         <div class="flex flex-col ">
                             <h1 class="text-[19px] md:text-[18px] ">Rewards</h1>
-                            <p
-                                class="text-white/70 mini:text-[14px] sedang:text-[16px] text-[14px] md:text-[16px] font-light  ">
+                            <p class="sub-paragraf">
                                 The best credit cards offer
                                 some
                                 tantalizing
@@ -259,7 +281,7 @@
 
 
     <!-- fourth section ========================= -->
-    <section class="mt-14 md:mt-28 px-5 lg:px-[135px] relative" data-aos="fade-up"
+    <section class="bg mt-14 md:mt-28 py-12 px-5 lg:px-[135px] relative" data-aos="fade-up"
         data-aos-anchor-placement="center-bottom">
         <div class="bulat absolute  -left-30 hidden xl:block"></div>
         <div class="container flex flex-col md:flex-row items-start justify-between md:space-x-10">
@@ -267,11 +289,11 @@
                 <img loading="lazy" src="assets/bill.png" alt="bill">
             </div>
             <!--  -->
-            <div class="kanan translate-y-16 large:px-6 md:px-0 ">
-                <h1 class="text-2xl md:text-[48px] large:text-4xl large:leading-[60px] lg:leading-normal">Easily control
+            <div class="kanan translate-y-10 large:px-6 md:px-0 ">
+                <h1 class="title-heading">Easily control
                     your billing &
                     invoicing.</h1>
-                <p class="text-white/70 mini:text-[14px] sedang:text-[16px] mt-5 large:text-[16px]">Elit enim sed massa
+                <p class="text-paragraf">Elit enim sed massa
                     etiam. Mauris eu adipiscing ultrices
                     ametodio aenean
                     neque.
@@ -289,8 +311,8 @@
 
 
     <!-- fifth section -->
-    <section class="mt-32 px-8 lg:px-[135px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <div class="container flex justify-around items-center flex-col md:flex-row space-x-1">
+    <section class=" mt-32 px-8 py-12 lg:px-[135px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div class="container flex justify-around items-center flex-col md:flex-row md:space-x-2">
             <div class="kanan">
                 <h1 class="text-[24px] lg:text-[48px]">Find a better card deal in few easy steps.</h1>
                 <p class="text-white/70 mini:text-[14px] mt-5 sedang:text-[16px] w-full md:w-[75%] ">Arcu tortor, purus
@@ -315,15 +337,16 @@
 
 
     <!-- sixthSection -->
-    <section class="mt-32 px-5  overflow-x-hidden " data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <section class=" mt-14  px-5 py-14 overflow-x-hidden " data-aos="fade-up" data-aos-anchor-placement="center-bottom">
 
         <div class="container flex flex-col md:flex-row justify-around items-center md:w-[80%] mx-auto relative">
             <div class="kanan">
-                <h1 class="text-2xl md:text-[48px] large:text-4xl large:leading-[60px] lg:leading-normal">What people
+                <h1 class="title-heading text-center md:text-left">What people
                     are saying about us</h1>
             </div>
             <div class="kiri mt-5 lg:mt-0">
-                <p class="text-white/70 mini:text-[14px] sedang:text-[16px] w-ful md:w-[75%]">Everything you need to
+                <p class="text-white/70 mini:text-[14px] sedang:text-[16px] w-ful md:w-[75%] text-center md:text-left">
+                    Everything you need to
                     accept card payments and grow your
                     business
                     anywhere on
@@ -338,12 +361,12 @@
 
 
     <!-- seventh Section -->
-    <section class="mt-28" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <section class=" mt-20 py-14" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div
-            class="container w-[80%] md:w-full lg:w-[80%] md:gap-y-6 mx-auto flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap lg:gap-y-0  justify-evenly items-center space-x-3">
+            class="container w-[80%] md:w-full lg:w-[80%] md:gap-y-6 mx-auto flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap lg:gap-y-0  justify-evenly items-center space-x-10">
             <!-- !====================== -->
             <div
-                class="card w-[80vw] md:w-[33%] h-[350px] md:h-[400px] py-10 mt-5 md:mt-0 md:py-5 flex flex-col justify-center items-start px-10 space-y-10 cardInti">
+                class="card w-[80vw] md:w-[33%] h-[350px] md:h-[400px] py-10 mt-5 md:mt-0 md:py-7 flex flex-col justify-center items-start px-10 space-y-10 cardInti">
                 <img loading="lazy" src="assets/quotes.svg" alt="quotes" class="w-[42px]">
                 <p class="w-[88%] text-white/70 mini:text-[14px] sedang:text-[16px]">Money is only a tool. It will take
                     you wherever you wish, but it will
@@ -360,7 +383,7 @@
             <!-- !====================== -->
             <!-- !====================== -->
             <div
-                class="card w-[80vw] md:w-[34%] h-[350px] md:h-[400px] py-10 mt-5 md:mt-0 md:py-5 flex flex-col justify-center items-start px-10 space-y-10  ">
+                class="card w-[80vw] md:w-[34%] h-[350px] md:h-[400px] py-10 mt-5 md:mt-0 md:py-7 flex flex-col justify-center items-start px-10 space-y-10  ">
                 <img loading="lazy" src="assets/quotes.svg" alt="quotes" class="w-[42px]">
                 <p class="w-[88%] text-white/70 mini:text-[14px] sedang:text-[16px]">Money makes your life easier. If
                     you're lucky to have it, you're lucky.
@@ -376,7 +399,7 @@
             <!-- !======================
             <!-- !====================== -->
             <div
-                class="card w-[80vw] md:w-[34%] h-[350px] md:h-[400px] py-10 mt-5 md:mt-0 md:py-5 flex flex-col justify-center items-start px-10 space-y-10 ">
+                class="card w-[80vw] md:w-[34%] h-[350px] md:h-[400px] py-10 mt-5 md:mt-0 md:py-7 flex flex-col justify-center items-start px-10 space-y-10 ">
                 <img loading="lazy" src="assets/quotes.svg" alt="quotes" class="w-[42px]">
                 <p class="w-[88%] text-white/70 mini:text-[14px] sedang:text-[16px]">It is usually people in the money
                     business, finance, and international
@@ -399,9 +422,9 @@
 
 
     <!-- eight section -->
-    <section class="mt-32" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <section class=" mt-24" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div
-            class="container w-[80%] mx-auto flex justify-center  gap-10 lg:gap-0 lg:justify-evenly items-center flex-wrap lg:flex-nowrap">
+            class="container w-[80%] mx-auto flex justify-center  space-x-10  gap-10 lg:gap-0 lg:justify-evenly items-center flex-wrap lg:flex-nowrap">
             <img loading="lazy" src="assets/airbnb.png" alt="airbnb" class="w-[192px]">
             <img loading="lazy" src="assets/binance.png" alt="binance" class="w-[192px]">
             <img loading="lazy" src="assets/coinbase.png" alt="coinbase" class="w-[192px]">
@@ -412,7 +435,7 @@
 
 
     <!-- ninth section -->
-    <section class="mt-32" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <section class=" mt-24 py-14" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div
             class="container kotakHire w-[98%] py-7 lg:w-[80%] flex flex-col lg:flex-row justify-between lg:space-x-5 items-center mx-auto lg:pl-[97px] lg:pr-[100px]">
             <div class="lg:w-[70%] w-full">
@@ -442,9 +465,9 @@
     <!-- end ninth section -->
 
 
-    <footer class="mt-36">
+    <footer class="mt-24 w-screen ">
         <div
-            class="container pt-10 w-[90%] flex justify-evenly items-start flex-col md:flex-row px-10 md:px-5 space-x-10">
+            class="container pt-10 w-[90%]  flex justify-evenly items-start flex-col md:flex-row px-10 md:px-5 space-x-10">
             <!--  -->
             <div class="mt-10 md:mt-0">
                 <img loading="lazy" src="assets/logo.svg" class="w-[250px]" alt="logo">
@@ -471,38 +494,33 @@
             <div class="mt-10 md:mt-0">
                 <h1 class="text-[18px]">Community</h1>
                 <ul class="mt-5">
-                    <li class="my-2"><a class="text-white/70 mini:text-[14px] sedang:text-[16px] hover:text-white/100"
-                            href="#">Help Center</a></li>
-                    <li class="my-2"><a class="text-white/70 mini:text-[14px] sedang:text-[16px] hover:text-white/100"
-                            href="#">Partners</a></li>
-                    <li class="my-2"><a class="text-white/70 mini:text-[14px] sedang:text-[16px] hover:text-white/100"
-                            href="#">Suggestions</a></li>
-                    <li class="my-2"><a class="text-white/70 mini:text-[14px] sedang:text-[16px] hover:text-white/100"
-                            href="#">Blog</a></li>
-                    <li class="my-2"><a class="text-white/70 mini:text-[14px] sedang:text-[16px] hover:text-white/100"
-                            href="#">Newsletters</a></li>
+                    <li class="my-2"><a class="footer-link" href="#">Help Center</a></li>
+                    <li class="my-2"><a class="footer-link" href="#">Partners</a></li>
+                    <li class="my-2"><a class="footer-link" href="#">Suggestions</a></li>
+                    <li class="my-2"><a class="footer-link" href="#">Blog</a></li>
+                    <li class="my-2"><a class="footer-link" href="#">Newsletters</a></li>
                 </ul>
             </div>
             <!--  -->
             <div class="mt-10 md:mt-0">
                 <h1 class="text-[18px]">Partner</h1>
                 <ul class="mt-5">
-                    <li class="my-2"><a class="text-white/70 mini:text-[14px] sedang:text-[16px] hover:text-white/100"
-                            href="#">Our Partner</a></li>
-                    <li class="my-2"><a class="text-white/70 mini:text-[14px] sedang:text-[16px] hover:text-white/100"
-                            href="#">Become a Partner</a></li>
+                    <li class="my-2"><a class="footer-link" href="#">Our Partner</a></li>
+                    <li class="my-2"><a class="footer-link" href="#">Become a Partner</a></li>
                 </ul>
             </div>
             <!--  -->
         </div>
-        <div class="end mt-6  flex justify-between items-center px-10">
+        <div class="end mt-6  flex justify-between items-center px-10 pb-4">
             <div class="">
                 <p class="text-white/70 mini:text-[14px] sedang:text-[16px] text-[14px]">Syaid Alfarishi November/2022
                 </p>
             </div>
-            <div class="flex justify-between items-center space-x-5">
-                <a href="#"><img loading="lazy" src="assets/instagram.svg" alt="instagram"></a>
-                <a href="#"><img loading="lazy" src="assets/facebook.svg" alt="facebook"></a>
+            <div class="flex justify-between items-center space-x-5 ">
+                <a href="https://www.instagram.com/sydalfhi_/"><img loading="lazy" src="assets/instagram.svg"
+                        alt="instagram"></a>
+                <a href="https://web.facebook.com/syaid.alfatishi/"><img loading="lazy" src="assets/facebook.svg"
+                        alt="facebook"></a>
                 <a href="#"><img loading="lazy" src="assets/twitter.svg" alt="twitter"></a>
                 <a href="#"><img loading="lazy" src="assets/linkedin.svg" alt="linkedin"></a>
             </div>
